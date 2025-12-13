@@ -142,7 +142,6 @@ body {
   padding: 20px;
 }
 
-/* Name Typography (same as image) */
 .hero-circle h1 {
   font-family: "Times New Roman", serif;
   font-size: 28px;
@@ -161,7 +160,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Hire Me Button (same style as shown) */
 .hire-btn {
   background: #d60000;
   border: none;
@@ -197,7 +195,7 @@ body {
 /* Floating Logos (increased size) */
 .floating-logo {
   position: absolute;
-  width: 100px; /* Bigger floating icons */
+  width: 100px; 
   opacity: 0.85;
   animation: float 5s infinite ease-in-out;
   filter: drop-shadow(0 0 8px rgba(0,0,0,0.7));
@@ -234,7 +232,6 @@ body {
   }
 }
 
-/* Mobile (hide 2 logos for neat layout) */
 @media (max-width: 768px) {
   .center-circle {
     width: 260px;
@@ -314,14 +311,14 @@ body {
 
 .stat-box {
   display: flex;
-  align-items: center; /* Icon + text vertically center */
+  align-items: center;
   margin-bottom: 25px;
 }
 
 .stat-icon {
   color: #aaa;
   margin-right: 15px;
-  min-width: 40px; /* Icon space */
+  min-width: 40px; 
 }
 
 .stat-text h2 {
@@ -345,7 +342,7 @@ body {
   }
 
   .stat-box {
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
   }
 }
 
@@ -360,7 +357,7 @@ body {
   transform: rotate(0deg);
   opacity: 1;
 
-  object-fit: contain; /* image distort na ho */
+  object-fit: contain; 
 }
 
 
@@ -1364,3 +1361,4 @@ body {
     font-size: 12px;
   }
 } 
+
