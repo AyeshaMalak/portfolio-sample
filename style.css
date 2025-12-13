@@ -143,7 +143,7 @@ body {
   padding: 20px;
 }
 
-/* Name Typography (same as image) */
+
 .hero-circle h1 {
   font-family: "Times New Roman", serif;
   font-size: 28px;
@@ -153,7 +153,7 @@ body {
   font-weight: 500;
 }
 
-/* Subtitle Typography */
+
 .hero-circle p {
   font-family: "Georgia", serif;
   font-size: 14px;
@@ -162,7 +162,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Hire Me Button (same style as shown) */
+
 .hire-btn {
   background: #d60000;
   border: none;
@@ -346,12 +346,13 @@ body {
   }
 
   .stat-box {
-    justify-content: center; /* Center horizontally */
+    justify-content: center; 
   }
 }
 
 
 .center-img {
+ position: relative;
   width: 100%;
   max-width: 1296px;
   height: auto;
@@ -1383,3 +1384,4 @@ body {
     max-width: 100%;
   }
 }
+
