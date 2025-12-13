@@ -1,16 +1,12 @@
-// -----------------------------
-// Mobile Menu Toggle
-// -----------------------------
-const menuBtn = document.querySelector('.menu-btn');
-const navLinks = document.querySelector('.nav-links');
-const socialIcons = document.querySelector('.social-icons');
 
-if (menuBtn) {
-  menuBtn.addEventListener('click', () => {
-    navLinks?.classList.toggle('active');
-    socialIcons?.classList.toggle('active');
-  });
-}
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+const socialIcons = document.getElementById("socialIcons");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  socialIcons.classList.toggle("active");
+});
 
 // -----------------------------
 // Counter Animation
@@ -104,6 +100,7 @@ readMoreButtons.forEach(btn => {
     }
   });
 });
+
 
 
 
