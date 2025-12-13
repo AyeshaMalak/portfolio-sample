@@ -156,6 +156,7 @@ body {
 .center-img {
   width: 100%;
   max-width: 320px;
+  height:400px;
   object-fit: contain;
 }
 
@@ -236,3 +237,4 @@ body {
 
 .footer h2 { color: #ff4040; }
 .footer-copy { color: #888; font-size: 14px; }
+
