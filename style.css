@@ -307,6 +307,17 @@ body {
   transform: rotate(0deg);
   z-index: 0;
 }
+.center-img {
+  position: relative;
+  width: 1296px;
+  height: 400px;
+
+  left: 0px;
+  transform: rotate(0deg);
+  opacity: 1;
+
+  object-fit: contain; 
+
 
 .right-stats {
   width: 280px;
@@ -349,17 +360,6 @@ body {
     justify-content: center; 
   }
 }
-
-
-.center-img {
- position: relative;
-  width: 100%;
-  max-width: 1296px;
-  height: auto;
-}
-
-
-
 
 .left-content h3 {
   color: #ff4040;
@@ -1384,4 +1384,5 @@ body {
     max-width: 100%;
   }
 }
+
 
