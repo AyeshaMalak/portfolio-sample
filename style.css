@@ -152,13 +152,17 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.curve-bg {
+  width: 360px;        
+  height: 360px;
+}
 .center-img {
-  width: 100%;
-  max-width: 320px;
-  height:600px;
+  width: 300px;        
+  height: auto;        
+  max-height: 300px;
   object-fit: contain;
 }
+
 
 @media (max-width: 900px) {
   .profile-section {
@@ -237,5 +241,6 @@ body {
 
 .footer h2 { color: #ff4040; }
 .footer-copy { color: #888; font-size: 14px; }
+
 
 
