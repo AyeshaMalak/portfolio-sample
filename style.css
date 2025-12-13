@@ -1364,11 +1364,15 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+/* CENTER IMAGE FIX */
 .center-img {
   width: 100%;
-  max-width: 1296px;
+  max-width: 320px;
   height: auto;
+  object-fit: contain;
+  z-index: 2;
 }
+
 @media (max-width: 900px) {
   .profile-section {
     overflow-x: hidden;
@@ -1397,6 +1401,12 @@ html, body {
     height: auto;
     aspect-ratio: 1 / 1;
   }
+  @media (max-width: 900px) {
+  .center-img {
+    margin-bottom: -8px;
+  }
+  }
+  
 }
 .developer-cta {
   overflow-x: hidden;
@@ -1421,3 +1431,27 @@ html, body {
     max-width: 100%;
   }
 }
+/* NAVBAR MOBILE FIX */
+@media (max-width: 768px) {
+
+  .navbar {
+    position: relative;
+    z-index: 999;
+  }
+
+  .menu-btn {
+    display: block;
+    color: white;
+    z-index: 1000;
+  }
+
+  .nav-links,
+  .social-icons {
+    position: absolute;
+    right: 15px;
+    top: 65px;
+    width: 220px;
+  }
+}
+
+
