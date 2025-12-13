@@ -10,7 +10,6 @@ html, body {
   overflow-x: hidden;
 }
 
-
 body {
   font-family: 'Arial', sans-serif;
   background-color: #141414;
@@ -143,7 +142,7 @@ body {
   padding: 20px;
 }
 
-
+/* Name Typography (same as image) */
 .hero-circle h1 {
   font-family: "Times New Roman", serif;
   font-size: 28px;
@@ -153,7 +152,7 @@ body {
   font-weight: 500;
 }
 
-
+/* Subtitle Typography */
 .hero-circle p {
   font-family: "Georgia", serif;
   font-size: 14px;
@@ -162,7 +161,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-
+/* Hire Me Button (same style as shown) */
 .hire-btn {
   background: #d60000;
   border: none;
@@ -307,17 +306,6 @@ body {
   transform: rotate(0deg);
   z-index: 0;
 }
-.center-img {
-  position: relative;
-  width: 1296px;
-  height: 400px;
-
-  left: 0px;
-  transform: rotate(0deg);
-  opacity: 1;
-
-  object-fit: contain; 
-
 
 .right-stats {
   width: 280px;
@@ -357,9 +345,24 @@ body {
   }
 
   .stat-box {
-    justify-content: center; 
+    justify-content: center; /* Center horizontally */
   }
 }
+
+
+/* Image style */
+.center-img {
+  position: relative;
+  width: 1296px;
+  height: 400px;
+
+  left: 0px;
+  transform: rotate(0deg);
+  opacity: 1;
+
+  object-fit: contain; /* image distort na ho */
+}
+
 
 .left-content h3 {
   color: #ff4040;
@@ -1306,6 +1309,43 @@ body {
   margin-top: 20px;
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 15px 30px 15px;
+  }
+
+  .footer-container h2 {
+    font-size: 24px;
+  }
+
+  .footer-container p {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  .footer-icons-wrapper {
+    gap: 40px;
+  }
+
+  .footer-icon i {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-icons-wrapper {
+    gap: 30px;
+  }
+
+  .footer-container h2 {
+    font-size: 28px;
+  }
+
+  .footer-icon i {
+    font-size: 40px;
+  }
+}
 
 @media (max-width: 480px) {
   .footer {
@@ -1324,65 +1364,3 @@ body {
     font-size: 12px;
   }
 } 
-@media (max-width: 900px) {
-  .profile-section {
-    overflow-x: hidden;
-  }
-
-  .left-content,
-  .right-stats {
-    position: static !important;
-    width: 100% !important;
-    left: auto !important;
-    right: auto !important;
-    transform: none !important;
-    text-align: center;
-    margin: 20px auto;
-  }
-
-  .center-box {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
-  }
-
-  .curve-bg {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    aspect-ratio: 1 / 1;
-  }
-}
-@media (max-width: 768px) {
-  .floating-logo {
-    max-width: 60px;
-    width: 100%;
-    left: auto !important;
-    right: auto !important;
-  }
-}
-.developer-cta {
-  overflow-x: hidden;
-}
-
-@media (max-width: 900px) {
-  .cta-bg,
-  .cta-right {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .client-feedback button.prev,
-  .client-feedback button.next {
-    left: 10px !important;
-    right: 10px !important;
-  }
-}
-@media (max-width: 768px) {
-  * {
-    max-width: 100%;
-  }
-}
-
-
